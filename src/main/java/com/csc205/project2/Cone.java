@@ -2,7 +2,54 @@ package com.csc205.project2;
 
 public class Cone extends Shape {
 
+    private double height;
+    private double radius;
+
+    public Cone() {
+        super();
+        this.radius = 0.0;
+        this.height = 0.0;
+    }
 
     public Cone(double v, double v1) {
+        super();
+        this.height = v;
+        this.radius = v1;
+    }
+
+    //getters
+    public double getHeight() {
+        return height;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    //setters
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public double surfaceArea() {
+        return Math.PI * (radius * radius) + Math.PI * radius * Math.sqrt((radius * radius) + (height * height));
+    }
+
+    public double volume() {
+        return (1.0 / 3.0) * Math.PI * (radius * radius) * height;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Cone {");
+        sb.append("radius=").append(radius);
+        sb.append(", surface area=").append(surfaceArea());
+        sb.append(", volume=").append(volume());
+        sb.append('}');
+        return sb.toString();
     }
 }
