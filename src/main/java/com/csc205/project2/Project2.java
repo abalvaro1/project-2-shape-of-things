@@ -9,6 +9,12 @@ import java.util.List;
  * Modify the driver as needed to demonstrate your classes.
  *
  */
+/*
+ * Author: Amethyst Alvaro , Ray Hedgecock
+ * Date: 09/28/2023
+ * Project 2: The Shape of Things
+ * Desc:Demonstration of inheritance and polymorphism through Shape radius, surface area, and volume using interface, abstract, and subclasses.
+ */
 public class Project2 {
 
     public static void main(String[] args) {
